@@ -162,3 +162,8 @@
     cursor: pointer;
     text-decoration: none;
   }
+
+
+  div::-webkit-scrollbar {
+    display: none;
+  }

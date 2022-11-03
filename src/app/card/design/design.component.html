@@ -1,9 +1,9 @@
 <a href="" class="dummy">
 <div class="row pt-2">
-    <div class="col-md-10 col-12 pt-2">
+    <!-- <div class="col-md-10 col-12 pt-2">
 
-    </div>
-    <div class="col-md-2 col-12 pt-2">
+    </div> -->
+    <div class="col-md-2 offset-md-10 col-6 offset-3 pt-2">
         <div class="card findarav purple">
             <div class="card-body text-center">
                 <div class="text-center"><h5><b>Click Me</b></h5></div>
@@ -17,9 +17,9 @@
 <div class="row pt-2">
 
     <div class="pt-2"></div>
-    <div class="container">
+    <div class="container" style="overflow-x: hidden;">
 
-        <div class="row">
+        <div class="row" style="display: flex;overflow-y: auto;flex-wrap: nowrap;">
 
             <div class="col-md-1 text-center col-4 pt-2" *ngFor="let a of dummy;index as i">
                 <button class="btn btn-primary" (click)="findThatDeck(i+1)" >{{a}}</button>
